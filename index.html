@@ -30,9 +30,9 @@ h2{font-size:clamp(36px,5vw,64px);margin-bottom:36px}
 .svc div.main{background:#111;color:#fff}
 .svc h3{font-size:26px;margin-bottom:10px}.svc span{font-family:Oswald;font-size:14px;opacity:.6}
 .gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
-.ph{aspect-ratio:4/3;background:repeating-linear-gradient(45deg,#cfcfcf 0 14px,#c4c4c4 14px 28px);display:flex;align-items:flex-end;border:2px solid #111;position:relative}
-.ph::before{content:"PHOTO TO BE REPLACED";position:absolute;top:10px;left:10px;font-size:11px;font-weight:700;background:#fff;padding:3px 7px;border:1px solid #111}
-.ph p{background:#111;color:#fff;width:100%;padding:10px 14px;font-weight:600;font-size:14px}
+.shot{margin:0;border:2px solid #111;background:#111;display:flex;flex-direction:column}
+.shot img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;display:block}
+.shot figcaption{color:#fff;padding:10px 14px;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.04em}
 .areas{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:start}
 .areas ul{list-style:none;columns:2;font-family:Oswald;font-size:22px;text-transform:uppercase}.areas li{padding:6px 0;border-bottom:1px solid #ccc}
 .big{font-size:20px;margin-bottom:16px}
@@ -76,12 +76,14 @@ footer small{display:block;color:#aaa;margin-top:8px}
 <section id="work" class="grid-bg"><div class="wrap">
 <p class="eyebrow">Our work</p><h2>Recent jobs.</h2>
 <div class="gal">
-<div class="ph"><p>Full house strip-out</p></div>
-<div class="ph"><p>Commercial fit-out demolition</p></div>
-<div class="ph"><p>Bathroom & kitchen strip-out</p></div>
-<div class="ph"><p>Slab grinding & floor prep</p></div>
-<div class="ph"><p>Tip run & site clear</p></div>
-<div class="ph"><p>Water damage strip-out</p></div>
+<figure class="shot"><img src="images/concrete-wall-sawing.jpg" width="1200" height="1600" alt="Wall sawing through a concrete wall" loading="lazy" decoding="async"><figcaption>Concrete cutting</figcaption></figure>
+<figure class="shot"><img src="images/pool-demolition-crew.jpg" width="1200" height="1600" alt="Crew breaking up the tiled floor of an empty pool" loading="lazy" decoding="async"><figcaption>Pool demolition</figcaption></figure>
+<figure class="shot"><img src="images/pool-jackhammer-breakout.jpg" width="1200" height="1600" alt="Crew with jackhammers breaking out a pool floor" loading="lazy" decoding="async"><figcaption>Concrete breakout</figcaption></figure>
+<figure class="shot"><img src="images/floor-grinding-prep.jpg" width="562" height="1000" alt="Floor grinder prepping a concrete floor" loading="lazy" decoding="async"><figcaption>Floor grinding</figcaption></figure>
+<figure class="shot"><img src="images/roof-strip.jpg" width="1200" height="1600" alt="Worker stripping a roof by the ocean" loading="lazy" decoding="async"><figcaption>Roof strip</figcaption></figure>
+<figure class="shot"><img src="images/deck-strip-out.jpg" width="1600" height="900" alt="Deck framing stripped back with scaffold in place" loading="lazy" decoding="async"><figcaption>Strip-outs</figcaption></figure>
+<figure class="shot"><img src="images/house-demolition-scaffold.jpg" width="1600" height="900" alt="Partly demolished weatherboard building with scaffold" loading="lazy" decoding="async"><figcaption>Demolition</figcaption></figure>
+<figure class="shot"><img src="images/deck-frame-removal.jpg" width="1600" height="1200" alt="Stripped deck framing with scaffold" loading="lazy" decoding="async"><figcaption>Roof and deck removal</figcaption></figure>
 </div></div></section>
 
 <section id="areas"><div class="wrap areas">
